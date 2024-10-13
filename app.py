@@ -3,6 +3,10 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
 #username and password
 username = 'c0920016'
 password = 'harish1234sree'
